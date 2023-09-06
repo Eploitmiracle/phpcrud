@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeddfe;
+}
+/* the code below is to add a margin-top(height) between the navbar and the main content on the body due to class fixed-top on the navbar */
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
